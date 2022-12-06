@@ -21,24 +21,24 @@
 // totalSpent += payment;
 // console. log( `Общая сумма потраченого в магазине: ${totalSpent}`);
 
-let number = 15;
-switch (number) {
-  case (number = 15):
-    console.log("Перша чверть години");
-    break;
+// let number = 15;
+// switch (number) {
+//   case (number = 15):
+//     console.log("Перша чверть години");
+//     break;
 
-  case number >= 15 && number < 30:
-    console.log("Друга чверть години");
-    break;
+//   case number >= 15 && number < 30:
+//     console.log("Друга чверть години");
+//     break;
 
-  case number >= 30 && number < 45:
-    console.Log("Третя чверть години");
-    break;
+//   case number >= 30 && number < 45:
+//     console.Log("Третя чверть години");
+//     break;
 
-  default:
-    console.log("Четверта чверть години");
-    break;
-}
+//   default:
+//     console.log("Четверта чверть години");
+//     break;
+// }
 
 // for (let i = 1; i <= 15; i += 1) {
 //     if (i%3 === 0 && i%5 === 0) {
@@ -50,4 +50,16 @@ switch (number) {
 //     } else {
 //         console.log(i);
 //     }
+// }
+
+// for (let i = 1; i <= 15; i += 1) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 5 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 3 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
 // }
