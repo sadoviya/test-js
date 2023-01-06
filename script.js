@@ -87,3 +87,35 @@
 //     console.log(i);
 //   }
 // }
+
+const salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
+
+// Object.values
+// const salariesValues = Object.values(salaries);
+// console.log(salariesValues);
+// let sum = 0;
+// for (const value of salariesValues) {
+//   sum += value;
+// }
+// console.log(sum);
+
+// for in
+// console.log(salaries);
+// let sum = 0;
+// for (const key in salaries) {
+//   sum += salaries[key];
+// }
+// console.log(sum);
+
+// Object.keys + for of
+const salariesKeys = Object.keys(salaries);
+console.log(salariesKeys);
+let sum = 0;
+for (const key of salariesKeys) {
+  sum += salaries[key];
+}
+console.log(sum);
