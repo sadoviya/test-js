@@ -88,11 +88,11 @@
 //   }
 // }
 
-const salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
 
 // Object.values
 // const salariesValues = Object.values(salaries);
@@ -112,10 +112,11 @@ const salaries = {
 // console.log(sum);
 
 // Object.keys + for of
-const salariesKeys = Object.keys(salaries);
-console.log(salariesKeys);
-let sum = 0;
-for (const key of salariesKeys) {
-  sum += salaries[key];
-}
-console.log(sum);
+// const salariesKeys = Object.keys(salaries);
+// console.log(salariesKeys);
+// let sum = 0;
+// for (const key of salariesKeys) {
+//   sum += salaries[key];
+// }
+// console.log(sum);
+
