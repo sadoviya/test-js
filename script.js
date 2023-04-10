@@ -17,3 +17,7 @@
 // console.log(Math.round(1.5));
 // console.log(Math.random());
 // console.log(Math.round(Math.random()));
+const message = "Welcome to Bahamas";
+console.log(message.length);
+console.log(message.toUpperCase());
+console.log(message.toLowerCase());
