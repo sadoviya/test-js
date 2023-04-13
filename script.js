@@ -37,6 +37,15 @@
 //   }
 // }
 // checkPassword(123);
-for (let i = 0; i <= 20; i += 2) {
-  console.log(i);
+// for (let i = 1; i <= 20; i += 1) {
+//   console.log(i);
+// }
+const target = 3;
+let sum = 0;
+
+for (let i = 0; i <= target; i += 1) {
+  sum += i;
+  console.log("ітерація", i);
 }
+
+console.log("сума", sum);
