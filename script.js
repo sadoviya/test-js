@@ -17,7 +17,26 @@
 // console.log(Math.round(1.5));
 // console.log(Math.random());
 // console.log(Math.round(Math.random()));
-const message = "Welcome to Bahamas";
-console.log(message.length);
-console.log(message.toUpperCase());
-console.log(message.toLowerCase());
+// const message = "Welcome to Bahamas";
+// console.log(message.length);
+// console.log(message.toUpperCase());
+// console.log(message.toLowerCase());
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   switch (password) {
+//     case null:
+//       message = "Canceled by user!";
+
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+// }
+// checkPassword(123);
+for (let i = 0; i <= 20; i += 2) {
+  console.log(i);
+}
