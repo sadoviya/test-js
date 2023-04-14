@@ -106,3 +106,57 @@
 // }
 
 // console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведення операції введіть суму більшу за нуль");
+//   } else if (amount > balance) {
+//     console.log("Недостатньо коштів на рахунку");
+//   } else {
+//     console.log("Операція зняття коштів проведена успішно");
+//   }
+// }
+
+// withdraw(0, 300); // "Для проведення операції введіть суму більшу за нуль"
+// withdraw(500, 300); // "Недостатньо коштів на рахунку"
+// withdraw(100, 300); // "Операція зняття коштів проведена успішно"
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведення операції введіть суму більшу за нуль");
+//     return;
+//   }
+//   if (amount > balance) {
+//     console.log("Недостатньо коштів на рахунку");
+//     return;
+//   }
+//   console.log("Операція зняття коштів проведена");
+// }
+
+// withdraw(0, 300); // "Для проведення операції введіть суму більшу за нуль"
+// withdraw(500, 300); // "Недостатньо коштів на рахунку"
+// withdraw(100, 300); // "Операція зняття коштів проведена"
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+
+//   // Change code above this line
+// }
+// console.log(checkStorage(10, 5)); // The order is accepted, our manager will contact you
+
+function checkStorage(available, ordered) {
+  if (ordered === 0) {
+    return "Your order is empty!";
+  }
+  if (ordered > available) {
+    return "Your order is too large, not enough goods in stock!";
+  }
+  return "The order is accepted, our manager will contact you";
+}
+console.log(checkStorage(10, 0)); // The order is accepted, our manager will contact you
+
