@@ -149,14 +149,22 @@
 // }
 // console.log(checkStorage(10, 5)); // The order is accepted, our manager will contact you
 
-function checkStorage(available, ordered) {
-  if (ordered === 0) {
-    return "Your order is empty!";
-  }
-  if (ordered > available) {
-    return "Your order is too large, not enough goods in stock!";
-  }
-  return "The order is accepted, our manager will contact you";
-}
-console.log(checkStorage(10, 0)); // The order is accepted, our manager will contact you
+// function checkStorage(available, ordered) {
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+// }
+// console.log(checkStorage(10, 0)); // The order is accepted, our manager will contact you
 
+// return [array[0], array[array.length - 1]];
+// function calculateEngravingPrice(message, pricePerWord) {
+  // Change code below this line
+  // return message.split(" ").length * pricePerWord;
+
+  // Change code above this line
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
