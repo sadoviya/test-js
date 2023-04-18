@@ -168,3 +168,33 @@
   // Change code above this line
 // }
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// function makeStringFromArray(array, delimiter) {
+//   return array.join(delimiter);
+
+//   // Change code above this line
+//   return string;
+// }
+// console.log(
+//   makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
+// );
+// function slugify(title) {
+//   return title.split(" ").join("-").toLowerCase();
+// }
+// console.log(slugify("Arrays for begginers"));
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(nonExtremeEls);
+// let arr = [];
+
+// console.log(fillArray(2, 10));
+
+// function fillArray(min, max) {
+//   for (let i = min; i <= max; i += 2) {
+//     return arr.push(i);
+//   }
+// }
+// for (let i = 0; i <= 20; i += 5) {
+//   console.log(i);
+// }
