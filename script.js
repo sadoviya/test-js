@@ -198,3 +198,13 @@
 // for (let i = 0; i <= 20; i += 5) {
 //   console.log(i);
 // }
+// const planets = ["Earth", "Mars", "Venus"];
+// let planetString = 0;
+// for (let i = 0; i < planets.length; i += 1) {
+//   // console.log(planets[i]);
+//   // console.log(typeof i);
+//   // console.log(typeof planets);
+//   planetString = planets[i];
+//   console.log(planetString);
+//   console.log(typeof planetString);
+// }
