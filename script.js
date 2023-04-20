@@ -162,10 +162,10 @@
 
 // return [array[0], array[array.length - 1]];
 // function calculateEngravingPrice(message, pricePerWord) {
-  // Change code below this line
-  // return message.split(" ").length * pricePerWord;
+// Change code below this line
+// return message.split(" ").length * pricePerWord;
 
-  // Change code above this line
+// Change code above this line
 // }
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
 // function makeStringFromArray(array, delimiter) {
@@ -208,9 +208,54 @@
 //   console.log(planetString);
 //   console.log(typeof planetString);
 // }
-const person = {
-  firstName: "John",
-  age: 30,
+// const person = {
+//   firstName: "John",
+//   age: 30,
+// };
+// const { firstName: personName } = person;
+// console.log(personName);
+
+const Transaction = {
+  DEPOSIT: "deposit",
+  WITHDRAW: "withdraw",
 };
-const { firstName: personName } = person;
-console.log(personName);
+
+const account = {
+  balance: 0,
+  transaction: [],
+  createTransaction(amount, type) {
+    return { amount, type, id: Math.random() };
+  },
+
+  deposit(amount) {
+    // account.balance += amount;
+    this.balance += amount;
+
+    const newTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
+
+    this.transaction.push(newTransaction);
+  },
+
+  withdraw(amount) {
+    if (amount > this.balance) {
+      console.log(`Зняття суми ${amount} не можливе - недостатньо коштів`);
+
+      return;
+    }
+
+    this.balance -= amount;
+
+    const newTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
+
+    this.transaction.push(newTransaction);
+  },
+};
+console.log(account);
+
+account.deposit(5000);
+
+console.log(account);
+
+account.withdraw(3000);
+
+console.log(account);
