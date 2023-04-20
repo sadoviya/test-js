@@ -215,47 +215,105 @@
 // const { firstName: personName } = person;
 // console.log(personName);
 
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
 
-const account = {
-  balance: 0,
-  transaction: [],
-  createTransaction(amount, type) {
-    return { amount, type, id: Math.random() };
-  },
+// const account = {
+//   balance: 0,
+//   transaction: [],
+//   createTransaction(amount, type) {
+//     return { amount, type, id: Math.random() };
+//   },
 
-  deposit(amount) {
-    // account.balance += amount;
-    this.balance += amount;
+//   deposit(amount) {
+//     // account.balance += amount;
+//     this.balance += amount;
 
-    const newTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
+//     const newTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
 
-    this.transaction.push(newTransaction);
-  },
+//     this.transaction.push(newTransaction);
+//   },
 
-  withdraw(amount) {
-    if (amount > this.balance) {
-      console.log(`Зняття суми ${amount} не можливе - недостатньо коштів`);
+//   withdraw(amount) {
+//     if (amount > this.balance) {
+//       console.log(`Зняття суми ${amount} не можливе - недостатньо коштів`);
 
-      return;
-    }
+//       return;
+//     }
 
-    this.balance -= amount;
+//     this.balance -= amount;
 
-    const newTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
+//     const newTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
 
-    this.transaction.push(newTransaction);
-  },
-};
-console.log(account);
+//     this.transaction.push(newTransaction);
+//   },
+// };
+// console.log(account);
 
-account.deposit(5000);
+// account.deposit(5000);
 
-console.log(account);
+// console.log(account);
 
-account.withdraw(3000);
+// account.withdraw(3000);
 
-console.log(account);
+// console.log(account);
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+// console.log(apartment);
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості з таким ключем
+//   console.log(book[key]);
+// }
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//   keys.push(key);
+//   // console.log(key);
+//   values.push(apartment[key]);
+//   // console.log(apartment[key]);
+// }
+// console.log(keys);
+// console.log(values);
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+//   if (!apartment.hasOwnProperty(key)) {
+//     keys.push(key);
+//     values.push(apartment[key]);
+//   }
+
+//   // Change code above this line
+// }
+// console.log(keys);
+// console.log(values);
