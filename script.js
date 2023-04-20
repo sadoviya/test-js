@@ -208,3 +208,9 @@
 //   console.log(planetString);
 //   console.log(typeof planetString);
 // }
+const person = {
+  firstName: "John",
+  age: 30,
+};
+const { firstName: personName } = person;
+console.log(personName);
