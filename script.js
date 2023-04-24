@@ -470,3 +470,69 @@
 // Change code above this line
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 // console.log(meanTemperature);
+// Колбек-функція
+// function greet(name) {
+//   console.log(`Ласкаво просимо ${name}.`);
+// }
+
+// // Функція вищого порядку
+// function registerGuest(name, callback) {
+//   console.log(`Реєструємо гостя ${name}.`);
+//   callback(name);
+// }
+
+// registerGuest("Манго", greet);
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Імітуємо доступність абонента випадковим числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`З'єднуємо з ${name}, очікуйте...`);
+//   // Логіка прийняття дзвінка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//   // Логіка активації автовідповідача
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//   // Логіка запису голограми
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Полі", takeCall, leaveHoloMessage);
+// const numbers = [5, 10, 15, 20, 25];
+
+// Класичний for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Індекс ${i}, значення ${numbers[i]}`);
+// }
+
+// Метод перебирання forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// });
+// function classicAdd(a, b, c) {
+//   return a + b + c;
+// };
+// const arrowAdd = (a, b, c) => a + b + c;
+// console.log(classicAdd(1, 2, 3));
+// console.log(arrowAdd(1, 2, 3));
+// const doMath = function (a, b, callback) {
+//   const result = callback(a, b);
+//   console.log(result);
+// };
+// const add = function (x, y) {
+//   return x + y;
+// };
+// doMath(2, 3, add);
