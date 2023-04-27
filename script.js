@@ -536,3 +536,213 @@
 //   return x + y;
 // };
 // doMath(2, 3, add);
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, makePizza, onOrderError) {
+//       if (this.pizzas.includes(pizzaName)) {
+//           makePizza(pizzaName);
+//       } else {
+//           onOrderError(error);
+//       }
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, makePizza, onOrderError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       makePizza(pizzaName);
+//     } else {
+//       onOrderError(`There is no pizza with the name "${pizzaName}" in stock.`);
+//     }
+//   },
+// };
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, makePizza, onOrderError) {
+//     if (!this.pizzas.includes(pizzaName)) {
+//       onOrderError(
+//         `There is no pizza with a name ${pizzaName} in the assortment.`
+//       );
+//       return;
+//     }
+//     makePizza(pizzaName);
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     }
+//     return onOrderError(
+//       `There is no pizza with a name ${pizzaName} in the assortment.`
+//     );
+//   },
+// };
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (!this.pizzas.includes(pizzaName)) {
+//       return onOrderError(pizzaName);
+//     }
+//     return onSuccess(pizzaName);
+//   },
+// };
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(pizzaName) {
+//   return `Error! There is no pizza with a name ${pizzaName} in the assortment.`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(function callback(element, index, array) {
+//     totalPrice += orderedItems[index];
+//   });
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(function callback(element, index, array) {});
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(function callback(el, i, ar) {
+//     if (numbers[i] > value) {
+//       filteredNumbers.push(numbers[i]);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// };
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   firstArray.forEach((e, i, a) => {
+//     if (secondArray.includes(firstArray[i])) {
+//       commonElements.push(firstArray[i]);
+//     }
+//   });
+//   return commonElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+// Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//       }
+//       return numbers;
+//   }
+//   // Change code above this line
+// }
+// changeEven([1, 2, 3, 4, 5], 10);
+
+// function changeEven(numbers, value) {
+//   const newNumbers = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newNumbers.push(numbers[i] + value);
+//     } else {
+//       newNumbers.push(numbers[i]);
+//     }
+//   }
+//   return newNumbers;
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
