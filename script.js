@@ -746,3 +746,6 @@
 // }
 
 // console.log(changeEven([1, 2, 3, 4, 5], 10));
+// const arr = [2, 4, 6];
+// const result = arr.filter((el) => el * 2);
+// console.log(result);
